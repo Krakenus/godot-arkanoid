@@ -1,6 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://w5adhxpvxhuv"]
-
-[ext_resource type="Texture2D" uid="uid://84g1s22jjlpd" path="res://assets/brick_red.png" id="1_si0av"]
+[gd_scene load_steps=2 format=3 uid="uid://w5adhxpvxhuv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5s8gs"]
 size = Vector2(64, 32)
@@ -9,7 +7,6 @@ size = Vector2(64, 32)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_si0av")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_5s8gs")

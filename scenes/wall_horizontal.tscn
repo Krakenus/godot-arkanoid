@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2kv8d5yhxfh1"]
+
+[ext_resource type="Texture2D" uid="uid://konxfm2b3ws" path="res://assets/wall_horizontal.png" id="1_xol1c"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_waas7"]
+a = Vector2(0, -439)
+b = Vector2(0, 421)
+
+[node name="wall_horizontal" type="StaticBody2D"]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -9)
+texture = ExtResource("1_xol1c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("SegmentShape2D_waas7")

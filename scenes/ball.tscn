@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhfjty3dl7ibo"]
+[gd_scene load_steps=4 format=3 uid="uid://dhfjty3dl7ibo"]
 
+[ext_resource type="Script" path="res://scenes/ball.gd" id="1_k5twn"]
 [ext_resource type="Texture2D" uid="uid://b2cwr1f7tm60x" path="res://assets/ball.png" id="1_qm7xk"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kpgw3"]
 radius = 16.0
 
 [node name="ball" type="RigidBody2D"]
+script = ExtResource("1_k5twn")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
