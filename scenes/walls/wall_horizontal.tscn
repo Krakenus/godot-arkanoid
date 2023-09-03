@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://tjl3n5g2koa1"]
+
+[ext_resource type="Texture2D" uid="uid://mv4hi7d7ygaw" path="res://assets/wall_horizontal.png" id="1_xpxbh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ilo2l"]
+size = Vector2(633.984, 3)
+
+[node name="wall_horizontal" type="StaticBody2D"]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xpxbh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.00748444, 0.015625)
+shape = SubResource("RectangleShape2D_ilo2l")
