@@ -1,11 +1,13 @@
 extends RigidBody2D
 
+@export var speed = 100
 
-# Called when the node enters the scene tree for the first time.
+
 func _ready():
-    pass # Replace with function body.
+    self.linear_velocity = Vector2(1, 1)
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-    pass
+func _physics_process(delta):
+    var collision = move_and_collide(self.linear_velocity * speed * delta)
+    if collision:
+        self.linear_velocity = self.linear_velocity.bounce(collision.get_normal())
