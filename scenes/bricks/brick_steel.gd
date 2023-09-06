@@ -1,4 +1,4 @@
-extends StaticBody2D
+extends "res://scenes/bricks/base.gd"
 
 var damaged_texture = preload("res://assets/brick_steel_broken.png")
 

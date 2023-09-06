@@ -18,14 +18,6 @@ position = Vector2(639, 439)
 [node name="ball" parent="." instance=ExtResource("2_jlefu")]
 position = Vector2(298, 717)
 
-[node name="brick" parent="." instance=ExtResource("3_qlnq0")]
-position = Vector2(592, 24)
-script = null
-
-[node name="brick2" parent="." instance=ExtResource("3_qlnq0")]
-position = Vector2(528, 24)
-script = null
-
 [node name="brick3" parent="." instance=ExtResource("4_hl5ey")]
 position = Vector2(464, 24)
 
@@ -40,3 +32,9 @@ position = Vector2(320, 857)
 
 [node name="launcher" parent="." instance=ExtResource("6_1xnvt")]
 position = Vector2(341, 801)
+
+[node name="brick" parent="." instance=ExtResource("3_qlnq0")]
+position = Vector2(592, 24)
+
+[node name="brick2" parent="." instance=ExtResource("3_qlnq0")]
+position = Vector2(528, 24)

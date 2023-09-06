@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dlgm76akrj6l4"]
+[gd_scene load_steps=4 format=3 uid="uid://dlgm76akrj6l4"]
 
+[ext_resource type="Script" path="res://scenes/launcher.gd" id="1_a0itg"]
 [ext_resource type="Texture2D" uid="uid://dp0jwj6kk3usn" path="res://assets/launcher.png" id="1_bw8mv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrpom"]
 size = Vector2(126, 6)
 
 [node name="launcher" type="CharacterBody2D"]
+script = ExtResource("1_a0itg")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
