@@ -1,1 +1,1 @@
-extends "res://scenes/bricks/base.gd"
+extends BaseBrick
