@@ -19,10 +19,10 @@ position = Vector2(639, 439)
 position = Vector2(298, 717)
 
 [node name="brick3" parent="." instance=ExtResource("4_hl5ey")]
-position = Vector2(464, 24)
+position = Vector2(136, 32)
 
 [node name="brick4" parent="." instance=ExtResource("4_hl5ey")]
-position = Vector2(400, 24)
+position = Vector2(48, 32)
 
 [node name="wall_horizontal" parent="." instance=ExtResource("5_tta48")]
 position = Vector2(319, 2)
@@ -34,7 +34,34 @@ position = Vector2(320, 857)
 position = Vector2(341, 801)
 
 [node name="brick" parent="." instance=ExtResource("3_qlnq0")]
-position = Vector2(592, 24)
+position = Vector2(88, 88)
 
 [node name="brick2" parent="." instance=ExtResource("3_qlnq0")]
-position = Vector2(528, 24)
+position = Vector2(192, 88)
+
+[node name="brick5" parent="." instance=ExtResource("4_hl5ey")]
+position = Vector2(328, 32)
+
+[node name="brick6" parent="." instance=ExtResource("4_hl5ey")]
+position = Vector2(232, 32)
+
+[node name="brick7" parent="." instance=ExtResource("4_hl5ey")]
+position = Vector2(504, 32)
+
+[node name="brick8" parent="." instance=ExtResource("4_hl5ey")]
+position = Vector2(416, 32)
+
+[node name="brick10" parent="." instance=ExtResource("4_hl5ey")]
+position = Vector2(592, 32)
+
+[node name="brick12" parent="." instance=ExtResource("3_qlnq0")]
+position = Vector2(456, 88)
+
+[node name="brick13" parent="." instance=ExtResource("3_qlnq0")]
+position = Vector2(552, 88)
+
+[node name="brick14" parent="." instance=ExtResource("3_qlnq0")]
+position = Vector2(282, 88)
+
+[node name="brick15" parent="." instance=ExtResource("3_qlnq0")]
+position = Vector2(376, 88)

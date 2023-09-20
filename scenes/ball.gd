@@ -2,7 +2,7 @@ extends RigidBody2D
 
 
 var velocity = Vector2.ZERO
-var speed = 2
+var speed = 1
 
 
 func _ready():
