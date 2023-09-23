@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://ddbl7mofiiwe8"]
+[gd_scene load_steps=8 format=3 uid="uid://ddbl7mofiiwe8"]
 
 [ext_resource type="PackedScene" uid="uid://d2kv8d5yhxfh1" path="res://scenes/walls/wall_vertical.tscn" id="1_0g46l"]
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_76xwy"]
 [ext_resource type="PackedScene" uid="uid://dhfjty3dl7ibo" path="res://scenes/ball.tscn" id="2_jlefu"]
 [ext_resource type="PackedScene" uid="uid://84f5d8trqcvt" path="res://scenes/bricks/brick_red.tscn" id="3_qlnq0"]
 [ext_resource type="PackedScene" uid="uid://b40oul1yy3mhm" path="res://scenes/bricks/brick_steel.tscn" id="4_hl5ey"]
@@ -8,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dlgm76akrj6l4" path="res://scenes/launcher.tscn" id="6_1xnvt"]
 
 [node name="main" type="Node"]
+script = ExtResource("1_76xwy")
 
 [node name="wall_vertical" parent="." instance=ExtResource("1_0g46l")]
 position = Vector2(1, 439)
@@ -27,8 +29,10 @@ position = Vector2(48, 32)
 [node name="wall_horizontal" parent="." instance=ExtResource("5_tta48")]
 position = Vector2(319, 2)
 
-[node name="wall_horizontal2" parent="." instance=ExtResource("5_tta48")]
-position = Vector2(320, 857)
+[node name="wall_horizontal2" parent="." groups=["bottom"] instance=ExtResource("5_tta48")]
+position = Vector2(320, 860)
+collision_layer = 3
+collision_mask = 3
 
 [node name="launcher" parent="." instance=ExtResource("6_1xnvt")]
 position = Vector2(341, 801)
