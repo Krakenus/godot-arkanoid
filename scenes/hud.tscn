@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmjeqx7508lil"]
+
+[ext_resource type="Script" path="res://scenes/hud.gd" id="1_g6tyn"]
+
+[node name="hud" type="CanvasLayer"]
+script = ExtResource("1_g6tyn")
+
+[node name="score_label" type="Label" parent="."]
+offset_left = 8.0
+offset_top = 752.0
+offset_right = 48.0
+offset_bottom = 843.0
+theme_override_font_sizes/font_size = 64
+text = "0"
+metadata/_edit_use_anchors_ = true

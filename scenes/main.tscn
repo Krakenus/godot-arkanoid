@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://ddbl7mofiiwe8"]
+[gd_scene load_steps=9 format=3 uid="uid://ddbl7mofiiwe8"]
 
 [ext_resource type="PackedScene" uid="uid://d2kv8d5yhxfh1" path="res://scenes/walls/wall_vertical.tscn" id="1_0g46l"]
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_76xwy"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://b40oul1yy3mhm" path="res://scenes/bricks/brick_steel.tscn" id="4_hl5ey"]
 [ext_resource type="PackedScene" uid="uid://tjl3n5g2koa1" path="res://scenes/walls/wall_horizontal.tscn" id="5_tta48"]
 [ext_resource type="PackedScene" uid="uid://dlgm76akrj6l4" path="res://scenes/launcher.tscn" id="6_1xnvt"]
+[ext_resource type="PackedScene" uid="uid://dmjeqx7508lil" path="res://scenes/hud.tscn" id="8_ghpp1"]
 
 [node name="main" type="Node"]
 script = ExtResource("1_76xwy")
@@ -30,11 +31,11 @@ position = Vector2(48, 32)
 position = Vector2(319, 2)
 
 [node name="wall_horizontal2" parent="." groups=["bottom"] instance=ExtResource("5_tta48")]
-position = Vector2(320, 860)
+position = Vector2(319, 896)
 collision_layer = 3
 collision_mask = 3
 
-[node name="launcher" parent="." instance=ExtResource("6_1xnvt")]
+[node name="launcher" parent="." groups=["launcher"] instance=ExtResource("6_1xnvt")]
 position = Vector2(341, 801)
 
 [node name="brick" parent="." instance=ExtResource("3_qlnq0")]
@@ -69,3 +70,5 @@ position = Vector2(282, 88)
 
 [node name="brick15" parent="." instance=ExtResource("3_qlnq0")]
 position = Vector2(376, 88)
+
+[node name="hud" parent="." instance=ExtResource("8_ghpp1")]

@@ -6,7 +6,6 @@ var damaged_texture = preload("res://assets/brick_steel_broken.png")
 @export
 var damaged = false
 
-
 func take_damage():
     if damaged:
         super.take_damage()

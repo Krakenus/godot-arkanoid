@@ -13,6 +13,7 @@ mass = 0.3
 max_contacts_reported = 1
 contact_monitor = true
 script = ExtResource("1_leyhd")
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)
