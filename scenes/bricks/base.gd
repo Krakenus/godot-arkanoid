@@ -23,4 +23,4 @@ func take_damage():
     self.queue_free()
     get_parent().update_score(score)
     if randf() > bonus_probability:
-        deploy_bonus()
+        self.call_deferred('deploy_bonus')
